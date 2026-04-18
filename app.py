@@ -49,7 +49,7 @@ body {
 
 # ---------------- HEADER ----------------
 st.markdown('<div class="title">🩺 Diabetes Prediction</div>', unsafe_allow_html=True)
-st.markdown('<div class="subtitle">AI-Based Health Risk Analysis</div>', unsafe_allow_html=True)
+st.markdown('<div class="subtitle">Health Risk Analysis</div>', unsafe_allow_html=True)
 
 # ---------------- INPUT SECTION ----------------
 col1, col2 = st.columns(2)
