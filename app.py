@@ -109,17 +109,7 @@ if st.button("🔍 Predict Now"):
         st.success("✅ Low Risk: Person is Not Diabetic")
 
     # ---------------- SAVE DATA ----------------
-    data['prediction'] = prediction_text
-
-    file_path = "data_log.csv"
-
-    if os.path.exists(file_path):
-        data.to_csv(file_path, mode='a', header=False, index=False)
-    else:
-        data.to_csv(file_path, mode='w', header=True, index=False)
-
-    st.info("📁 Data saved successfully!")
-
+    
     # ---------------- SHOW DATA ----------------
     if st.checkbox("📊 Show Saved Data"):
         saved_data = pd.read_csv(file_path)
