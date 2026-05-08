@@ -111,6 +111,6 @@ if st.button("🔍 Predict Now"):
     # ---------------- SAVE DATA ----------------
     
     # ---------------- SHOW DATA ----------------
-    if st.checkbox("📊 Show Saved Data"):
+    if st.checkbox(""):
         saved_data = pd.read_csv(file_path)
         st.dataframe(saved_data)
