@@ -90,11 +90,10 @@ hypertension = 1 if hypertension == "Yes" else 0
 heart_disease = 1 if heart_disease == "Yes" else 0
 
 # ---------------- PREDICTION ----------------
-<center>
+
 if st.button("🔍 Predict Now"):
     myinput = [[gender, age, hypertension, heart_disease, smoking_history, bmi, HbA1c_level, blood_glucose_level]]
     columns = ['gender', 'age', 'hypertension', 'heart_disease', 'smoking_history', 'bmi', 'HbA1c_level', 'blood_glucose_level']
-</center>
     
     data = pd.DataFrame(data=myinput, columns=columns)
     data_scaled = scaler.transform(data)
